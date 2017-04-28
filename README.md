@@ -70,7 +70,7 @@ cd deploy-wordpress/
 and provision the stack run the following,
 
 ```
-ansible-playbook -i /etc/ansible/hosts deploy-webapp.yml --verbose
+ansible-playbook -i /etc/ansible/hosts deploy-wp.yml --verbose
 ```
 
 Once the stack creation is complete open your browser and goto  (replace WebServerPublicIp with your WebServers IP)
