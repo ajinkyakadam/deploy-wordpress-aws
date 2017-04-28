@@ -1,0 +1,16 @@
+---
+  - name:
+    hosts: localhost
+    connection: local
+    gather_facts: False
+    vars_files:
+    - group_vars/all.yml
+    tasks:
+      - name: Deploy Wordpress Stack
+        cloudformation:
+          stack_name: "{{ stack_name }}"
+          state: "present"
+          region: "{{ region_name }}"
+          disable_rollback: true
+          template: "files/wordpress-cf.template"
+        register: cf_ss
