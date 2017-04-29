@@ -1,4 +1,4 @@
 ---
 # Global settings for aws ec2 instances, elb
 region_name: us-east-1
-stack_name: "StaticSiteStack"
+stack_name: "WordPressStack"
